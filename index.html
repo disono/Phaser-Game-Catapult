@@ -1,0 +1,47 @@
+<html>
+<head>
+    <link rel="stylesheet" href="bower_components/dragdealer/src/dragdealer.css">
+
+    <style>
+        body {
+            padding: 0 !important;
+            margin:  0 !important;
+        }
+
+        #game_controls {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+
+<body>
+<div id="gameContainer"></div>
+
+<table style="width: 100% !important;" id="game_controls">
+    <tr>
+        <td width="90%">
+            <div id="slider-force" class="dragdealer">
+                <strong class="handle red-bar value-force">FORCE</strong>
+            </div>
+        </td>
+
+        <td width="10%" rowspan="2"><button style="width: 100% !important; height: 100% !important; padding: 0 !important;"
+                                            id="btn_fire">FIRE</button></td>
+    </tr>
+    <tr>
+        <td width="90%">
+            <div id="slider-angle" class="dragdealer">
+                <strong class="handle red-bar value-angle">ANGLE</strong>
+            </div>
+        </td>
+    </tr>
+</table>
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/dragdealer/src/dragdealer.js"></script>
+<script src="bower_components/phaser/build/phaser.min.js"></script>
+<script src="assets/js/game.js"></script>
+</body>
+</html>
